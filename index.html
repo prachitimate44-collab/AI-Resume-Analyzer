@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:50px;
+        }
+
+        input, textarea{
+            width:300px;
+            padding:10px;
+            margin:10px;
+        }
+
+        button{
+            padding:10px 25px;
+            background:blue;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>AI Resume Analyzer</h1>
+
+<form action="/analyze" method="POST" enctype="multipart/form-data">
+
+    <h3>Upload Resume (PDF)</h3>
+
+    <input type="file" name="resume" accept=".pdf">
+
+
+    <h3>Enter Job Description</h3>
+
+    <textarea 
+    name="job"
+    rows="6"
+    placeholder="Enter Job Description">
+    </textarea>
+
+
+    <br>
+
+    <button type="submit">
+        Analyze Resume
+    </button>
+
+</form>
+
+
+</body>
+</html>
